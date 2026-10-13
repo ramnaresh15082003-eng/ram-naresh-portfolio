@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Website</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightblue;
+            margin: 30px;
+        }
+
+        h1 {
+            color: darkblue;
+            text-align: center;
+        }
+
+        h2 {
+            color: darkgreen;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            width: 300px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        input, select {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solod gray;
+            border-radius: 10px;
+        }
+
+        button:hover {
+           padding: 10px 20px;
+            background-color: darkgreen;
+            color: white;
+            border: none;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>My Website</h1>
+
+    <h2>About Me</h2>
+
+    <h3>My Education</h3>
+
+    <p>My name is <b>RAM NARESH</b>.</p>
+
+    <p>I am studying <strong>Diploma in Computer Science</strong>.</p>
+
+    <p>I am learning <i>HTML</i>.<br>
+    I want to become a web developer.</p>
+
+    <h2>My Skills</h2>
+
+    <ul>
+        <li>Computer Science</li>
+        <li>Mathematics</li>
+        <li>English</li>
+    </ul>
+
+    <h2>My Form</h2>
+
+    <form>
+
+        <label>Name:</label>
+        <input type="text">
+
+        <br><br>
+
+        <label>Email:</label>
+        <input type="email">
+
+        <br><br>
+
+        <label>Password:</label>
+        <input type="password">
+
+        <br><br>
+
+        <label>Gender:</label>
+
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+
+        <br><br>
+
+        <label>Course:</label>
+
+        <select>
+            <option>Computer Science</option>
+            <option>Electrical</option>
+            <option>Mechanical</option>
+            <option>Civil</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+         <button onclick="showMassage()">click me</button>
+
+         <p id="Massage"></p>
+
+        <script>
+            function showMassage () {
+                document.getElementbyId("massage").innerHTML="Welcome Ram Naresh!  you are learning javascript.";
+            }
+        </script>
+
+</body>
+</html>
